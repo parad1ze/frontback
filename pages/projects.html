@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Проекты</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">☺</div>
+                    <span>Александр Серегин</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="projects.html" class="active">Проекты</a></li>
+                    <li><a href="diary.html">Дневник</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="section">
+            <h2>Мои проекты</h2>
+            <div class="filter-buttons">
+                <button class="btn filter-btn active" data-filter="all">Все</button>
+                <button class="btn filter-btn" data-filter="html">HTML</button>
+                <button class="btn filter-btn" data-filter="js">JS</button>
+                <button class="btn filter-btn" data-filter="react">React</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="html">
+                    <div class="project-image">Личный сайт</div>
+                    <div class="project-info">
+                        <h3>Личный сайт</h3>
+                        <p>Адаптивный веб-сайт с использованием HTML и CSS.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="js">
+                    <div class="project-image">Todo-приложение</div>
+                    <div class="project-info">
+                        <h3>Todo-приложение</h3>
+                        <p>Приложение для управления задачами на чистом JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="react">
+                    <div class="project-image">Интернет-магазин</div>
+                    <div class="project-info">
+                        <h3>Интернет-магазин</h3>
+                        <p>Прототип интернет-магазина с использованием React.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="html">
+                    <div class="project-image">Портфолио</div>
+                    <div class="project-info">
+                        <h3>Портфолио</h3>
+                        <p>Адаптивное портфолио с использованием Bootstrap.</p>
+                        <div class="project-tags">
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Контакты</p>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для проектов -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title">Название проекта</h2>
+            <div class="modal-image" id="modal-image">Изображение проекта</div>
+            <p id="modal-description">Описание проекта</p>
+            <div class="modal-links">
+                <a href="#" class="btn" id="modal-live">Живая версия</a>
+                <a href="#" class="btn" id="modal-code">Исходный код</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/main.js"></script>
+</body>
+</html>
